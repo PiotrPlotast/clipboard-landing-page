@@ -22,23 +22,33 @@
   <body class="font-body">
     <main>
       <section
-        class="xs:bg-mobile-header bg-no-repeat flex flex-col justify-center items-center p-4 text-center"
+        class="xs:bg-mobile-header bg-cover bg-no-repeat flex xs:flex-col xs:justify-center xs:items-center xs:p-8 xs:text-center xs:mb-40"
       >
-        <img src="./images/logo.svg" alt="" class="mt-32" />
-        <h1 class="font-semibold text-headers">
+        <img src="./images/logo.svg" alt="" class="mt-32 mb-16" />
+        <h1 class="font-semibold text-headers text-3xl">
           A history of everything you copy
         </h1>
 
-        <p>
+        <p class="text-base text-text mt-4 mb-12 leading-6">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
 
-        <a href="">Download for iOS</a>
-        <a href="">Download for Mac</a>
+        <a
+          href=""
+          class="bg-[#26BBA4] text-white text-lg rounded-full w-full py-3 mb-6 tracking-wide"
+          >Download for iOS</a
+        >
+        <a
+          href=""
+          class="bg-[#6174FF] text-white text-lg rounded-full w-full py-3 tracking-wide"
+          >Download for Mac</a
+        >
       </section>
       <section>
-        <h2>Keep track of your snippets</h2>
+        <h2 class="font-semibold text-headers text-2xl">
+          Keep track of your snippets
+        </h2>
 
         <p>
           Clipboard instantly stores any item you copy in the cloud, meaning you
@@ -158,6 +168,7 @@
             },
             backgroundImage: {
               "mobile-header": "url('./images/bg-header-mobile.png')",
+              "desktop-header": "url('./images/bg-header-desktop.png')",
             },
             screens: {
               xs: "320px",
