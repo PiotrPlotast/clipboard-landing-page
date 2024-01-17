@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="icon"
@@ -13,11 +19,15 @@
     />
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
-  <body>
+  <body class="font-body">
     <main>
-      <section>
-        <img src="./images/logo.svg" alt="" />
-        <h1>A history of everything you copy</h1>
+      <section
+        class="xs:bg-mobile-header bg-no-repeat flex flex-col justify-center items-center p-4 text-center"
+      >
+        <img src="./images/logo.svg" alt="" class="mt-32" />
+        <h1 class="font-semibold text-headers">
+          A history of everything you copy
+        </h1>
 
         <p>
           Clipboard allows you to track and organize everything you copy.
@@ -70,27 +80,34 @@
 
         <p>We’ve got the tools to boost your productivity.</p>
 
-        <img src="./images/icon-blacklist.svg" alt="" />
+        <div>
+          <img src="./images/icon-blacklist.svg" alt="" />
 
-        <h3>Create blacklists</h3>
+          <h3>Create blacklists</h3>
 
-        <p>
-          Ensure sensitive information never makes its way to your clipboard by
-          excluding certain sources.
-        </p>
+          <p>
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div>
+          <img src="./images/icon-text.svg" alt="" />
 
-        <img src="./images/icon-text.svg" alt="" />
+          <h3>Plain text snippets</h3>
 
-        <h3>Plain text snippets</h3>
+          <p>
+            Remove unwanted formatting from copied text for a consistent look
+          </p>
+        </div>
+        <div>
+          <img src="./images/icon-preview.svg" alt="" />
 
-        <p>Remove unwanted formatting from copied text for a consistent look</p>
-        .
+          <h3>Sneak preview</h3>
 
-        <img src="./images/icon-preview.svg" alt="" />
-
-        <h3>Sneak preview</h3>
-
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+          <p>
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
       </section>
       <section>
         <img src="./images/logo-google.png" alt="" />
@@ -132,5 +149,26 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              body: ["Bai Jamjuree", "sans-serif"],
+            },
+            backgroundImage: {
+              "mobile-header": "url('./images/bg-header-mobile.png')",
+            },
+            screens: {
+              xs: "320px",
+            },
+            colors: {
+              headers: "#4C545C",
+              text: "#9EABB2",
+            },
+          },
+        },
+      };
+    </script>
   </body>
 </html>
