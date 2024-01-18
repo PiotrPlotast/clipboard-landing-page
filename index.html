@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,7 +22,7 @@
   <body class="font-body">
     <main>
       <section
-        class="xs:bg-mobile-header bg-cover bg-no-repeat flex xs:flex-col xs:justify-center xs:items-center xs:p-8 xs:text-center xs:mb-40"
+        class="xs:bg-mobile-header bg-cover bg-no-repeat xs:flex xs:flex-col xs:justify-center xs:items-center xs:p-8 xs:text-center xs:mb-40"
       >
         <img src="./images/logo.svg" alt="" class="mt-32 mb-16" />
         <h1 class="font-semibold text-headers text-3xl">
@@ -36,29 +36,31 @@
 
         <a
           href=""
-          class="bg-[#26BBA4] text-white text-lg rounded-full w-full py-3 mb-6 tracking-wide"
+          class="bg-[#26BBA4] text-white text-lg rounded-full w-full py-3 mb-6 tracking-wide hover:opacity-90 border-b-4 border-[#209E8B]"
           >Download for iOS</a
         >
         <a
           href=""
-          class="bg-[#6174FF] text-white text-lg rounded-full w-full py-3 tracking-wide"
+          class="bg-[#6174FF] text-white text-lg rounded-full w-full py-3 tracking-wide hover:opacity-90 border-b-4 border-[#5262D8]"
           >Download for Mac</a
         >
       </section>
-      <section>
-        <h2 class="font-semibold text-headers text-2xl">
+      <section
+        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:p-8 xs:text-center"
+      >
+        <h2 class="font-semibold text-headers text-2xl xs:mb-4">
           Keep track of your snippets
         </h2>
 
-        <p>
+        <p class="text-text xs:mb-16">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
 
-        <img src="./images/image-computer.png" alt="" />
+        <img src="./images/image-computer.png" alt="" class="xs:mb-14" />
 
-        <h3>Quick Search</h3>
+        <h3 class="text-xl">Quick Search</h3>
 
         <p>
           Easily search your snippets by content, category, web address,
@@ -93,7 +95,7 @@
         <div>
           <img src="./images/icon-blacklist.svg" alt="" />
 
-          <h3>Create blacklists</h3>
+          <h3 class="text-xl">Create blacklists</h3>
 
           <p>
             Ensure sensitive information never makes its way to your clipboard
@@ -103,7 +105,7 @@
         <div>
           <img src="./images/icon-text.svg" alt="" />
 
-          <h3>Plain text snippets</h3>
+          <h3 class="text-xl">Plain text snippets</h3>
 
           <p>
             Remove unwanted formatting from copied text for a consistent look
@@ -112,7 +114,7 @@
         <div>
           <img src="./images/icon-preview.svg" alt="" />
 
-          <h3>Sneak preview</h3>
+          <h3 class="text-xl">Sneak preview</h3>
 
           <p>
             Quick preview of all snippets on your Clipboard for easy access.
@@ -176,6 +178,15 @@
             colors: {
               headers: "#4C545C",
               text: "#9EABB2",
+            },
+            fontSize: {
+              sm: "0.8rem",
+              base: "1rem",
+              xl: "1.5rem",
+              "2xl": "1.5rem",
+              "3xl": "1.75rem",
+              "4xl": "2.441rem",
+              "5xl": "3.052rem",
             },
           },
         },
