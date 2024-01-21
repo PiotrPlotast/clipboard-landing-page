@@ -20,7 +20,7 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body class="font-body">
-    <main>
+    <main class="xs:mb-[10.625rem]">
       <section
         class="xs:bg-mobile-header bg-cover bg-no-repeat xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center xs:mb-40"
       >
@@ -87,13 +87,13 @@
         </div>
       </section>
       <section
-        class="xs:mt-[11.562rem] xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center"
+        class="xs:mt-[11.562rem] xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-7 xs:text-center"
       >
-        <h2 class="font-semibold xs:text-headers xs:text-3xl">
+        <h2 class="font-semibold xs:text-headers xs:text-3xl xs:mb-4">
           Access Clipboard anywhere
         </h2>
 
-        <p class="text-base text-text">
+        <p class="text-base text-text xs:mb-16">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
@@ -101,20 +101,25 @@
         <img src="./images/image-devices.png" alt="" />
       </section>
       <section
-        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center"
+        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-4 xs:text-center xs:mt-[8.125rem] xs:mb-[8.1875rem]"
       >
-        <h2 class="font-semibold xs:text-headers xs:text-3xl">
-          Supercharge your workflow
-        </h2>
+        <div class="xs:mb-[5.625rem]">
+          <h2
+            class="font-semibold xs:text-headers xs:text-3xl xs:mb-[0.6875rem]"
+          >
+            Supercharge your workflow
+          </h2>
 
-        <p class="text-base text-text">
-          We’ve got the tools to boost your productivity.
-        </p>
-
-        <div>
+          <p class="text-base text-text">
+            We’ve got the tools to boost your productivity.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center xs:mb-14">
           <img src="./images/icon-blacklist.svg" alt="" />
 
-          <h3 class="xs:text-xl font-semibold xs:text-headers">
+          <h3
+            class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+          >
             Create blacklists
           </h3>
 
@@ -123,10 +128,12 @@
             by excluding certain sources.
           </p>
         </div>
-        <div>
+        <div class="flex flex-col justify-center items-center xs:mb-14">
           <img src="./images/icon-text.svg" alt="" />
 
-          <h3 class="xs:text-xl font-semibold xs:text-headers">
+          <h3
+            class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+          >
             Plain text snippets
           </h3>
 
@@ -134,10 +141,12 @@
             Remove unwanted formatting from copied text for a consistent look
           </p>
         </div>
-        <div>
+        <div class="flex flex-col justify-center items-center">
           <img src="./images/icon-preview.svg" alt="" />
 
-          <h3 class="xs:text-xl font-semibold xs:text-headers">
+          <h3
+            class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+          >
             Sneak preview
           </h3>
 
@@ -147,7 +156,7 @@
         </div>
       </section>
       <section
-        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center"
+        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center gap-14 xs:mb-[10.625rem]"
       >
         <img src="./images/logo-google.png" alt="" />
         <img src="./images/logo-ibm.png" alt="" />
@@ -158,34 +167,48 @@
       <section
         class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center"
       >
-        <h2 class="font-semibold xs:text-headers xs:text-2xl">
+        <h2 class="font-semibold xs:text-headers xs:text-3xl xs:mb-4">
           Clipboard for iOS and Mac OS
         </h2>
 
-        <p class="text-base text-text">
+        <p class="text-base text-text xs:leading-[1.625rem] xs:mb-[2.875rem]">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
 
-        <a href="">Download for iOS</a>
-        <a href="">Download for Mac</a>
+        <a
+          href=""
+          class="bg-[#26BBA4] text-white text-lg rounded-full w-full py-3 mb-6 tracking-wide hover:opacity-90 border-b-4 border-[#209E8B]"
+          >Download for iOS</a
+        >
+        <a
+          href=""
+          class="bg-[#6174FF] text-white text-lg rounded-full w-full py-3 tracking-wide hover:opacity-90 border-b-4 border-[#5262D8]"
+          >Download for Mac</a
+        >
       </section>
     </main>
     <footer
-      class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center"
+      class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center bg-[rgba(158,171,178,0.1)] xs:py-14 xs:mb-[10.625rem)]"
     >
-      <img src="./images/logo.svg" alt="" />
-      <ul>
-        <li><a href="">FAQs</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Press Kit</a></li>
-        <li><a href="">Install Guide</a></li>
+      <img src="./images/logo.svg" alt="" class="xs:size-14 xs:mb-10" />
+      <ul class="flex flex-col gap-5 xs:mb-12">
+        <li><a href="" class="text-[1.125rem]">FAQs</a></li>
+        <li><a href="" class="text-[1.125rem]">Contact Us</a></li>
+        <li><a href="" class="text-[1.125rem]">Privacy Policy</a></li>
+        <li><a href="" class="text-[1.125rem]">Press Kit</a></li>
+        <li><a href="" class="text-[1.125rem]">Install Guide</a></li>
       </ul>
-      <ul>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Instagram</a></li>
+      <ul class="flex items-center gap-10">
+        <li>
+          <a href=""><img src="./images/icon-facebook.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="./images/icon-twitter.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="./images/icon-instagram.svg" alt="" /></a>
+        </li>
       </ul>
     </footer>
     <!-- <footer>
