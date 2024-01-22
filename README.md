@@ -14,5 +14,6 @@ Page live at: https://piotrplotast.github.io/clipboard-landing-page/
 - Tailwind
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/PiotrPlotast/clipboard-landing-page/assets/89207478/9ea8f790-20fa-4e38-b809-e1ae7f21f626)
+
 
