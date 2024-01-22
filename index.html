@@ -22,68 +22,84 @@
   <body class="font-body">
     <main class="xs:mb-[10.625rem]">
       <section
-        class="xs:bg-mobile-header bg-cover bg-no-repeat xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center xs:mb-40"
+        class="xs:bg-mobile-header md:bg-desktop-header bg-cover bg-no-repeat xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center xs:mb-40"
       >
         <img src="./images/logo.svg" alt="" class="mt-32 mb-16" />
-        <h1 class="font-semibold xs:text-headers xs:text-3xl">
+        <h1 class="font-semibold xs:text-headers xs:text-3xl md:text-5xl">
           A history of everything you copy
         </h1>
 
-        <p class="text-base text-text mt-4 mb-12 leading-6">
+        <p
+          class="xs:text-base text-text mt-4 mb-12 leading-6 md:max-w-[45.625rem] md:text-[1.25rem]"
+        >
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-
-        <a
-          href=""
-          class="bg-[#26BBA4] text-white text-lg rounded-full w-full py-3 mb-6 tracking-wide hover:opacity-90 border-b-4 border-[#209E8B]"
-          >Download for iOS</a
+        <div
+          class="xs:flex xs:flex-col xs:w-full md:flex-row md:gap-4 md:justify-center"
         >
-        <a
-          href=""
-          class="bg-[#6174FF] text-white text-lg rounded-full w-full py-3 tracking-wide hover:opacity-90 border-b-4 border-[#5262D8]"
-          >Download for Mac</a
-        >
+          <a
+            href=""
+            class="bg-[#26BBA4] text-white text-lg rounded-full xs:w-full md:max-w-56 py-3 xs:mb-6 md:mb-0 tracking-wide hover:opacity-90 border-b-4 border-[#209E8B]"
+            >Download for iOS</a
+          >
+          <a
+            href=""
+            class="bg-[#6174FF] text-white text-lg rounded-full xs:w-full md:max-w-56 py-3 tracking-wide hover:opacity-90 border-b-4 border-[#5262D8]"
+            >Download for Mac</a
+          >
+        </div>
       </section>
       <section
         class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center"
       >
-        <h2 class="font-semibold xs:text-headers xs:text-3xl xs:mb-4">
+        <h2
+          class="font-semibold xs:text-headers xs:text-3xl xs:mb-4 md:text-4xl"
+        >
           Keep track of your snippets
         </h2>
 
-        <p class="text-text xs:mb-16">
+        <p class="text-text xs:mb-16 md:text-lg">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-
-        <img src="./images/image-computer.png" alt="" class="xs:mb-14" />
-        <div class="xs:mb-12">
-          <h3 class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]">
-            Quick Search
-          </h3>
-          <p class="text-base text-text">
-            Easily search your snippets by content, category, web address,
-            application, and more.
-          </p>
-        </div>
-        <div class="xs:mb-12">
-          <h3 class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]">
-            iCloud Sync
-          </h3>
-          <p class="text-base text-text">
-            Instantly saves and syncs snippets across all your devices.
-          </p>
-        </div>
-        <div class="">
-          <h3 class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]">
-            Complete History
-          </h3>
-          <p class="text-base text-text">
-            Retrieve any snippets from the first moment you started using the
-            app.
-          </p>
+        <div class="md:grid grid-cols-2">
+          <img src="./images/image-computer.png" alt="" class="xs:mb-14" />
+          <div>
+            <div class="xs:mb-12">
+              <h3
+                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]"
+              >
+                Quick Search
+              </h3>
+              <p class="text-base text-text">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+            <div class="xs:mb-12">
+              <h3
+                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]"
+              >
+                iCloud Sync
+              </h3>
+              <p class="text-base text-text">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+            <div class="">
+              <h3
+                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]"
+              >
+                Complete History
+              </h3>
+              <p class="text-base text-text">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section
