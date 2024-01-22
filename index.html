@@ -20,7 +20,7 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body class="font-body">
-    <main class="xs:mb-[10.625rem]">
+    <main class="xs:mb-[10.625rem] overflow-hidden">
       <section
         class="xs:bg-mobile-header md:bg-desktop-header bg-cover bg-no-repeat xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center xs:mb-40"
       >
@@ -28,7 +28,6 @@
         <h1 class="font-semibold xs:text-headers xs:text-3xl md:text-5xl">
           A history of everything you copy
         </h1>
-
         <p
           class="xs:text-base text-text mt-4 mb-12 leading-6 md:max-w-[45.625rem] md:text-[1.25rem]"
         >
@@ -58,43 +57,46 @@
         >
           Keep track of your snippets
         </h2>
-
-        <p class="text-text xs:mb-16 md:text-lg">
+        <p class="text-text xs:mb-16 md:text-lg md:max-w-2xl">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <div class="md:grid grid-cols-2">
-          <img src="./images/image-computer.png" alt="" class="xs:mb-14" />
+        <div class="md:grid grid-cols-2 grid items-center gap-16">
+          <img
+            src="./images/image-computer.png"
+            alt=""
+            class="xs:mb-14 md:mb-0"
+          />
           <div>
             <div class="xs:mb-12">
               <h3
-                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]"
+                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem] md:text-left"
               >
                 Quick Search
               </h3>
-              <p class="text-base text-text">
+              <p class="text-base text-text md:text-left md:max-w-96">
                 Easily search your snippets by content, category, web address,
                 application, and more.
               </p>
             </div>
             <div class="xs:mb-12">
               <h3
-                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]"
+                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem] md:text-left"
               >
                 iCloud Sync
               </h3>
-              <p class="text-base text-text">
+              <p class="text-base text-text md:text-left md:max-w-96">
                 Instantly saves and syncs snippets across all your devices.
               </p>
             </div>
             <div class="">
               <h3
-                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem]"
+                class="xs:text-xl font-semibold xs:text-headers mb-[0.625rem] md:text-left"
               >
                 Complete History
               </h3>
-              <p class="text-base text-text">
+              <p class="text-base text-text md:text-left md:max-w-96">
                 Retrieve any snippets from the first moment you started using
                 the app.
               </p>
@@ -105,74 +107,73 @@
       <section
         class="xs:mt-[11.562rem] xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-7 xs:text-center"
       >
-        <h2 class="font-semibold xs:text-headers xs:text-3xl xs:mb-4">
+        <h2
+          class="font-semibold xs:text-headers xs:text-3xl xs:mb-4 md:text-4xl"
+        >
           Access Clipboard anywhere
         </h2>
-
-        <p class="text-base text-text xs:mb-16">
+        <p class="text-base text-text xs:mb-16 md:text-lg">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
-
-        <img src="./images/image-devices.png" alt="" />
+        <img src="./images/image-devices.png" alt="" class="md:max-w-[51rem]" />
       </section>
       <section
         class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-4 xs:text-center xs:mt-[8.125rem] xs:mb-[8.1875rem]"
       >
         <div class="xs:mb-[5.625rem]">
           <h2
-            class="font-semibold xs:text-headers xs:text-3xl xs:mb-[0.6875rem]"
+            class="font-semibold xs:text-headers xs:text-3xl xs:mb-[0.6875rem] md:text-4xl"
           >
             Supercharge your workflow
           </h2>
-
-          <p class="text-base text-text">
+          <p class="xs:text-base text-text md:text-lg">
             We’ve got the tools to boost your productivity.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center xs:mb-14">
-          <img src="./images/icon-blacklist.svg" alt="" />
-
-          <h3
-            class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+        <div class="md:flex md:gap-8">
+          <div
+            class="flex flex-col justify-center items-center xs:mb-14 md:mb-0"
           >
-            Create blacklists
-          </h3>
-
-          <p class="text-base text-text">
-            Ensure sensitive information never makes its way to your clipboard
-            by excluding certain sources.
-          </p>
-        </div>
-        <div class="flex flex-col justify-center items-center xs:mb-14">
-          <img src="./images/icon-text.svg" alt="" />
-
-          <h3
-            class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+            <img src="./images/icon-blacklist.svg" alt="" />
+            <h3
+              class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+            >
+              Create blacklists
+            </h3>
+            <p class="text-base text-text md:max-w-[21.875rem]">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center xs:mb-14 md:mb-0"
           >
-            Plain text snippets
-          </h3>
-
-          <p class="text-base text-text">
-            Remove unwanted formatting from copied text for a consistent look
-          </p>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <img src="./images/icon-preview.svg" alt="" />
-
-          <h3
-            class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
-          >
-            Sneak preview
-          </h3>
-
-          <p class="text-base text-text">
-            Quick preview of all snippets on your Clipboard for easy access.
-          </p>
+            <img src="./images/icon-text.svg" alt="" />
+            <h3
+              class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+            >
+              Plain text snippets
+            </h3>
+            <p class="text-base text-text md:max-w-[21.875rem]">
+              Remove unwanted formatting from copied text for a consistent look
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="./images/icon-preview.svg" alt="" />
+            <h3
+              class="xs:text-xl font-semibold xs:text-headers xs:mt-10 xs:mb-[1.125rem]"
+            >
+              Sneak preview
+            </h3>
+            <p class="text-base text-text md:max-w-[21.875rem]">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
         </div>
       </section>
       <section
-        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center gap-14 xs:mb-[10.625rem]"
+        class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 gap-14 xs:mb-[10.625rem] md:flex-row md:items-center flex-wrap lg:gap-24"
       >
         <img src="./images/logo-google.png" alt="" />
         <img src="./images/logo-ibm.png" alt="" />
@@ -186,29 +187,31 @@
         <h2 class="font-semibold xs:text-headers xs:text-3xl xs:mb-4">
           Clipboard for iOS and Mac OS
         </h2>
-
         <p class="text-base text-text xs:leading-[1.625rem] xs:mb-[2.875rem]">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-
-        <a
-          href=""
-          class="bg-[#26BBA4] text-white text-lg rounded-full w-full py-3 mb-6 tracking-wide hover:opacity-90 border-b-4 border-[#209E8B]"
-          >Download for iOS</a
+        <div
+          class="xs:flex xs:flex-col xs:w-full md:flex-row md:gap-4 md:justify-center"
         >
-        <a
-          href=""
-          class="bg-[#6174FF] text-white text-lg rounded-full w-full py-3 tracking-wide hover:opacity-90 border-b-4 border-[#5262D8]"
-          >Download for Mac</a
-        >
+          <a
+            href=""
+            class="bg-[#26BBA4] text-white text-lg rounded-full xs:w-full md:max-w-56 py-3 xs:mb-6 md:mb-0 tracking-wide hover:opacity-90 border-b-4 border-[#209E8B]"
+            >Download for iOS</a
+          >
+          <a
+            href=""
+            class="bg-[#6174FF] text-white text-lg rounded-full xs:w-full md:max-w-56 py-3 tracking-wide hover:opacity-90 border-b-4 border-[#5262D8]"
+            >Download for Mac</a
+          >
+        </div>
       </section>
     </main>
     <footer
-      class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center bg-[rgba(158,171,178,0.1)] xs:py-14 xs:mb-[10.625rem)]"
+      class="xs:flex xs:flex-col xs:justify-center xs:items-center xs:px-8 xs:text-center bg-[rgba(158,171,178,0.1)] xs:py-14 md:flex-row md:justify-between md:px-16"
     >
-      <img src="./images/logo.svg" alt="" class="xs:size-14 xs:mb-10" />
-      <ul class="flex flex-col gap-5 xs:mb-12">
+      <img src="./images/logo.svg" alt="" class="xs:size-14 xs:mb-10 md:mb-0" />
+      <ul class="xs:flex xs:flex-col xs:gap-5 xs:mb-12 md:flex-row md:mb-0">
         <li>
           <a href="" class="text-[1.125rem] hover:text-[#26BBA4]">FAQs</a>
         </li>
